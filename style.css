@@ -1,0 +1,895 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+
+/* HEADER */
+
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 10;
+    justify-content: center;
+    background-color: white;
+}
+
+.header-top {
+  padding: 5px 15px 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-left button {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.header-left button:hover {
+  background-color: rgb(250, 250, 250);
+}
+
+.header-left a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.header-left a:hover {
+  text-decoration-line: underline;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+}
+
+.header-center a {
+  display: flex;
+  align-items:center;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.header-right button {
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  -webkit-transition: background-color 600ms ease-out;
+  -moz-transition: background-color 600ms ease-out;
+  -o-transition: background-color 600ms ease-out;
+  transition: background-color 600ms ease-out;
+}
+
+.header-right button:hover {
+  background-color: #326891;
+}
+
+#user-icon {
+    background-color: white;
+    border: none;
+}
+
+#user-icon:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.header-bottom {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+}
+
+.header-bottom a {
+    color: rgb(50, 104, 145);
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.subscribe-link {
+    border-right: 1px solid rgb(210, 210, 210);
+}
+
+
+/* MAIN PAGE */
+
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 44px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 3em 0 .5em 0;
+}
+
+.social {
+  display: flex;
+  margin-top: 15px;
+  justify-items: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social img {
+  width: 27px;
+  height: 27px;
+  padding: 5px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.social img:hover {
+  background-color: white;
+  border: 1px solid #eee;
+  transform: scale(1.1);
+}
+
+img.bookmark,
+img.comment  {
+  background-color: white;
+  width: 30px;
+  height: 35px;
+  border-radius: 0;
+}
+
+img.comment  {
+  background-color: white;
+  width: 45px;
+  height: 35px;
+  border-radius: 0;
+
+}
+
+img.bookmark:hover,
+img.comment:hover  {
+  border: none;
+  transform: none;
+}
+
+
+
+/* FIST IMAGE SECTION */
+
+.alan-guth {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 945px;
+  margin: 20px auto;
+}
+
+.alan-guth img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.alan-guth p {
+  width: 80%;
+  max-width: 750px;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(102, 102, 102)
+}
+
+.credit {
+  padding-left: 10px;
+  font-size: 12px;
+  color: rgb(136, 136, 136)
+}
+
+
+
+/* DOCUMENT */
+
+
+
+.document,
+.main-document {
+  width: 44%;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: helvetica;
+  margin: 50px 0;
+}
+
+.heading h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.heading h3 {
+  font-size: 12px;
+
+}
+
+.heading a {
+  color: black;
+  text-decoration-color:rgb(204, 204, 204);
+}
+
+.heading a:hover {
+  text-decoration: none;
+}
+
+.sign-up {
+  margin: 0 auto;
+  padding: 20px 0;
+  border-top: 1px solid rgb(226, 226, 226);
+  display: flex;
+  align-items: flex-start;
+  font-style: italic;
+  line-height: 22px;
+}
+
+.sign-up p {
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+}
+
+.sign-up span {
+  font-size:14px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sign-up button {
+  padding: 4px 12px;
+  white-space: nowrap;
+  background-color: white;
+  border: 1px solid black;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sign-up button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+.main-document {
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 44%;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.main-document p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.main-document a {
+  color:rgb(50, 104, 145);
+}
+
+.main-document a:hover {
+  text-decoration: none;
+}
+
+
+
+/* ASIDE SECTION */
+
+
+aside {
+  width: 15%;
+  position: absolute;
+  top: 1200px;
+  left: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+.aside div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aside a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.aside a:hover {
+  text-decoration-line: underline;
+}
+
+
+
+/* ARTICLE SECTION */
+
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 945px;
+  min-width: 400px;
+  margin: 50px auto;
+  gap: 20px;
+}
+
+.article-header h2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.article-header p {
+  font-size: 14px;
+  line-height: 18px;
+  color:rgb(102, 102, 102);
+}
+
+.inflation {
+  position: relative;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.inflation img {
+  max-width: 945px;
+  margin: 0 auto;
+}
+
+.inflation span {
+  font-size: 11px;
+  font-weight: 800;
+  padding-right: 10px;
+}
+
+.universe {
+  width: 220px;
+  position: absolute;
+  top: 140px;
+}
+
+.time {
+  width: 220px;
+  position: absolute;
+  top: 140px;
+  left: 240px;
+}
+
+.coffee {
+  width: 220px;
+  position: absolute;
+  top: 140px;
+  left: 480px;
+}
+
+.coffee-everywhere {
+  width: 220px;
+  position: absolute;
+  top: 140px;
+  left: 720px;
+}
+
+.enough-time {
+  width: 220px;
+  position: absolute;
+  top: 420px;
+}
+
+.inflation-coffee {
+  width: 220px;
+  position: absolute;
+  top: 420px;
+  left: 240px;
+}
+
+.fluctuation {
+  width: 220px;
+  position: absolute;
+  top: 420px;
+  left: 480px;
+}
+
+.expansion {
+  width: 220px;
+  position: absolute;
+  top: 420px;
+  left: 720px;
+}
+
+/* 720PX IMG */
+
+.inflation720 {
+  position: relative;
+  font-family: Arial, Helvetica;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.inflation720 img {
+  max-width: 720px;
+}
+
+.inflation720 span {
+  font-size: 10px;
+  font-weight: 800;
+  padding-right: 5px;
+}
+
+.universe720 {
+  width: 160px;
+  position: absolute;
+  top: 130px;
+}
+
+.time720 {
+  width: 160px;
+  position: absolute;
+  top: 130px;
+  left: 190px;
+}
+
+.coffee720 {
+  width: 160px;
+  position: absolute;
+  top: 130px;
+  left: 370px;
+}
+
+.coffee-everywhere720 {
+  width: 160px;
+  position: absolute;
+  top: 130px;
+  left: 560px;
+}
+
+.enough-time720 {
+  width: 160px;
+  position: absolute;
+  top: 430px;
+}
+
+.inflation-coffee720 {
+  width: 160px;
+  position: absolute;
+  top: 430px;
+  left: 190px;
+}
+
+.fluctuation720 {
+  width: 160px;
+  position: absolute;
+  top: 430px;
+  left: 370px;
+}
+
+.expansion720 {
+  width: 160px;
+  position: absolute;
+  top: 430px;
+  left: 560px;
+}
+
+.article-footer {
+  font-family: arial, helvetica;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+}
+
+.article-footer span {
+  padding-top: 15px;
+  border-top: 1px solid rgb(51, 51, 51);
+}
+
+.video {
+  width: 44%;
+  min-width: 600px;
+  margin: 40px auto;
+}
+
+.video-player {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 480px;
+  min-height: 337.5px;
+  margin: 10px auto;
+  padding-top: 25%;
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.figcaption {
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+}
+
+.figcaption span {
+  padding-left: 10px;
+  font-size: 12px;
+  color: rgb(136, 136, 136);
+}
+
+.telescope {
+  width: 44%;
+  min-width: 600px;
+  margin: 40px auto;
+}
+
+.telescope-img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.print-info {
+  width: 44%;
+  min-width: 600px;
+  margin: 20px auto;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(102, 102, 102);
+}
+
+.print-info a {
+  color: rgb(102, 102, 102);
+}
+
+.print-info a:hover {
+  text-decoration: none;
+}
+
+.comments {
+  width: 44%;
+  min-width: 600px;
+  margin: 20px auto 50px auto;
+  display: flex;
+  justify-content: space-between
+}
+
+.comments button {
+  min-width: 330px;
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  -webkit-transition: background-color 600ms ease-out;
+  -moz-transition: background-color 600ms ease-out;
+  -o-transition: background-color 600ms ease-out;
+  transition: background-color 600ms ease-out;
+}
+
+.comments button:hover {
+  background-color: #326891;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1250px) {
+  aside img {
+    display: none;
+  }
+
+  .aside div {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+  }
+}
+
+
+@media only screen and (max-width:1150px) {
+  aside {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #user-icon,
+  .header-bottom {
+      display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  header {
+    position: static;
+  }
+
+  .search,
+  .header-left a,
+  .subscribe,
+  .log-in {
+    display: none;
+  }
+
+  h1 {
+    padding: 1em 0 .7em 0;
+  }
+
+  .alan-guth{
+    max-width: none;
+  }
+
+  .alan-guth p {
+    width: 90%;
+    max-width: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.sign-up {
+  width: 95%;
+}
+}
+
+@media only screen and (min-width:1000px) {
+  .inflation {
+    display:initial;
+  }
+
+  .inflation720 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:999px) {
+  .inflation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:739px) {
+  h1 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  .title-section,
+  .document,
+  .main-document,
+  .print-info,
+  .comments {
+    width: 90%;
+    min-width: 400px;
+  }
+
+  .figcaption {
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .video,
+  .video-player {
+    width: 100%;
+    min-width: 480px;
+    min-height: 270px;
+  }
+
+  .telescope {
+    width: 100%;
+    min-width: 480px;
+  }
+
+  .comments {
+    flex-direction: column;
+  }
+
+  .comments button {
+    width: 100%;
+  }
+}
