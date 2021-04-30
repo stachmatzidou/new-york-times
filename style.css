@@ -769,9 +769,216 @@ iframe {
 }
 
 
+.double-border {
+  max-width: 950px;
+  margin: 0 auto;
+  height: 3px;
+  border-top: 1px solid rgb(226, 226, 226);
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+  width: 100%;
+  padding-bottom: 10px;
+  font-family: helvetica, arial;
+}
+
+
+.footer-container {
+    max-width: 950px;
+    margin: 0px auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-container a:hover {
+    text-decoration-line: underline;
+}
+
+.footer-header,
+.footer-header2 {
+    margin: 0px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-header a,
+.footer-header2 a {
+    font-size: 10px;
+    color: rgb(86, 123, 149);
+}
+
+.footer-header a:hover,
+.footer-header2 a:hover {
+  text-decoration: none;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.footer-main h2 {
+    width: 100%;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    padding-bottom: 5px;
+}
+
+.footer-content {
+    width: 80%;
+    display: flex;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.footer-content div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+.footer-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 10px;
+    border-left: 1px solid rgb(226, 226, 226);
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.top a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.top a svg {
+    width: 10px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    gap: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    gap: 5px;
+}
+
+.footer-footer,
+.footer-footer2 {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.footer-footer a,
+.footer-footer2 a {
+  white-space: nowrap;
+  color: rgb(102, 102, 102);
+}
+
+.rest-links {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+
+/* FOOTER2 SECTION */
+
+
+.footer-container2 {
+  width: 100%;
+  padding-top: 10px;
+}
+
+
+.footer-container2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-container2 a:hover {
+  text-decoration-line: underline;
+}
+
+.footer-header2 {
+  padding-bottom: 10px;
+}
+
+.footer-header2 a {
+  color: rgb(86, 123, 149);
+}
+
+.footer-header2 a:hover {
+  text-decoration: none;
+}
+
+.footer-main2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-main2 a {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+  padding-top: 15px;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+  .footer-main2 a:hover {
+    text-decoration: none;
+  }
+
+.border-bottom {
+  max-width: 950px;
+  margin: 15px auto;
+  height: 3px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
 
 
 
+/* MEDIA QUERIES */
 
 
 
@@ -830,6 +1037,12 @@ iframe {
 .sign-up {
   width: 95%;
 }
+
+.double-border,
+.footer-container {
+  width: 94%;
+  margin: 0 auto;
+}
 }
 
 @media only screen and (min-width:1000px) {
@@ -845,6 +1058,39 @@ iframe {
 @media only screen and (max-width:999px) {
   .inflation {
     display: none;
+  }
+}
+
+@media only screen and (min-width:920px) {
+  .footer-container2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:919px) {
+  .double-border {
+    width: 100%;
+  }
+
+  .footer-container {
+    display: none;
+  }
+
+  .footer-header2,
+  .footer-main2,
+  .footer-footer2 {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  .border-bottom {
+    width: 94%;
+  }
+}
+
+@media only screen and (max-width:819px) {
+  .border-bottom {
+    width: 100%;
   }
 }
 
